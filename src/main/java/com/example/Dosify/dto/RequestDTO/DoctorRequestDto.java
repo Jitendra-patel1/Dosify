@@ -1,6 +1,5 @@
 package com.example.Dosify.dto.RequestDTO;
 
-
 import com.example.Dosify.Enum.Gender;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
@@ -10,15 +9,12 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
-public class UserRequestDto {
-
+public class DoctorRequestDto {
+    Integer id;
     String name;
-
-    int age;
-
-    String emailId;
-
+    String email;
     String mobNo;
 
-    Gender gender;
+   int age;
+   Gender gender;
 }

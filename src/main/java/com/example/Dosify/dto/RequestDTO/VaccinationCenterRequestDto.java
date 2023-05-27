@@ -1,7 +1,8 @@
 package com.example.Dosify.dto.RequestDTO;
 
-
-import com.example.Dosify.Enum.Gender;
+import com.example.Dosify.Enum.CenterType;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
@@ -10,15 +11,10 @@ import lombok.experimental.FieldDefaults;
 @AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 @Builder
-public class UserRequestDto {
-
+public class VaccinationCenterRequestDto {
     String name;
 
-    int age;
+    String location;
 
-    String emailId;
-
-    String mobNo;
-
-    Gender gender;
+    CenterType centerType;
 }
